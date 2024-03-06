@@ -61,7 +61,6 @@ int main(int argc, char *argv[]) {
         default: {
             forkid_write = fork();
             close(mypipe[1]);
-
             if (forkid_write == 0) {
                 FILE *dest;
 
